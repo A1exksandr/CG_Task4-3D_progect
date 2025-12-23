@@ -1,9 +1,9 @@
 package main.java.com.vsucg.math;
 
 public class Vector3f {
-    public double x, y, z;
+    public float x, y, z;
 
-    public Vector3f(double x, double y, double z) {
+    public Vector3f(float x, float y, float z) {
         this.x = x;
         this.y = y;
         this.z = z;
@@ -17,11 +17,11 @@ public class Vector3f {
         return new Vector3f(this.x - v.x, this.y - v.y, this.z - v.z);
     }
 
-    public Vector3f mul(double scalar) {
+    public Vector3f mul(float scalar) {
         return new Vector3f(this.x * scalar, this.y * scalar, this.z * scalar);
     }
 
-    public Vector3f div(double scalar) {
+    public Vector3f div(float scalar) {
         if (scalar == 0) throw new ArithmeticException("Division by zero");
         return new Vector3f(this.x / scalar, this.y / scalar, this.z / scalar);
     }
@@ -33,7 +33,7 @@ public class Vector3f {
     public Vector3f normalize() {
         double len = length();
         if (len == 0) throw new ArithmeticException("Cannot normalize zero vector");
-        return div(len);
+        return div((float) len);
     }
 
     public double dot(Vector3f v) {

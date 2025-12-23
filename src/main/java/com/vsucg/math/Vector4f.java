@@ -1,8 +1,8 @@
 package main.java.com.vsucg.math;
 
 public class Vector4f {
-    public double x, y, z, w;
-    public Vector4f(double x, double y, double z, double w) {
+    public float x, y, z, w;
+    public Vector4f(float x, float y, float z, float w) {
         this.x = x;
         this.y = y;
         this.z = z;
@@ -14,10 +14,10 @@ public class Vector4f {
     public Vector4f sub(Vector4f v) {
         return new Vector4f(x - v.x, y - v.y, z - v.z, w - v.w);
     }
-    public Vector4f mul(double scalar) {
+    public Vector4f mul(float scalar) {
         return new Vector4f(this.x * scalar, this.y * scalar, this.z * scalar, this.w * scalar);
     }
-    public Vector4f div(double scalar) {
+    public Vector4f div(float scalar) {
         if (scalar == 0) throw new ArithmeticException("Division by zero");
         return new Vector4f(this.x / scalar, this.y / scalar, this.z / scalar, this.w / scalar);
     }
@@ -27,7 +27,7 @@ public class Vector4f {
     public Vector4f normalize() {
         double length = length();
         if (length == 0) throw new ArithmeticException("Division by zero");
-        return div(length);
+        return div((float) length);
     }
     public double dot(Vector4f v) {
         return x * v.x + y * v.y + z * v.z + w * v.w;

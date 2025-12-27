@@ -1,6 +1,6 @@
-package main.java.com.vsucg.model;
-import main.java.com.vsucg.math.Vector2f;
-import main.java.com.vsucg.math.Vector3f;
+package com.vsucg.model;
+import com.vsucg.math.Vector2f;
+import com.vsucg.math.Vector3f;
 
 import java.util.*;
 

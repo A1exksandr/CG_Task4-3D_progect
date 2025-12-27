@@ -3,7 +3,7 @@
   <component name="AdditionalModuleElements">
     <content url="file://$MODULE_DIR$" dumb="true">
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/test.com.vsucg.objreader" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/test.com.vsucg.objreader" isTestSource="true" />
     </content>
   </component>
 </module>

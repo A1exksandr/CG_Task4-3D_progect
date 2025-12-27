@@ -1,4 +1,4 @@
-package main.java.com.vsucg.math;
+package com.vsucg.math;
 
 public class Vector3f {
     public float x, y, z;

@@ -1,9 +1,9 @@
-package main.java.com.vsucg.objreader;
+package com.vsucg.objreader;
 
-import main.java.com.vsucg.math.Vector2f;
-import main.java.com.vsucg.math.Vector3f;
-import main.java.com.vsucg.model.Model;
-import main.java.com.vsucg.model.Polygon;
+import com.vsucg.math.Vector2f;
+import com.vsucg.math.Vector3f;
+import com.vsucg.model.Model;
+import com.vsucg.model.Polygon;
 
 import java.util.ArrayList;
 import java.util.Arrays;

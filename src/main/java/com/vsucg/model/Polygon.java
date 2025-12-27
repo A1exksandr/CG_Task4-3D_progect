@@ -1,4 +1,4 @@
-package main.java.com.vsucg.model;
+package com.vsucg.model;
 
 import java.util.ArrayList;
 
